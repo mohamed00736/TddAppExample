@@ -56,10 +56,10 @@ class CoffeeListScreenKtTest{
             Coffee("Hola","Mocha Coffe2", listOf("ing1" ,"ing2"),"imgurl" , id = "2" ),
         )
         //assert all items exist within the tree
-//        listofCoffe.forEach { item ->
-//            composeTestRule.onNodeWithText(item.title.toString()).assertExists()
-//        }
-        composeTestRule.onNodeWithText("Espresso ").assertExists().performScrollTo().fetchSemanticsNode("mal9itch")
+           listofCoffe.forEach { item ->
+               composeTestRule.onNodeWithText(item.title.toString()).assertExists()
+           }
+       // composeTestRule.onNodeWithText("Espresso ").assertExists().performScrollTo().fetchSemanticsNode("mal9itch")
        // composeTestRule.onNodeWithText("Hola").assertExists()
     }
 }
